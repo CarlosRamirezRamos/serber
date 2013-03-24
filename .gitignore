@@ -1,0 +1,14 @@
+tmp
+
+/.settings
+/.project
+/.classpath
+
+dist
+project/project
+project/target
+target
+.history
+
+logs
+RUNNING_PID
