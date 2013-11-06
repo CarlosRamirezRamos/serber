@@ -74,7 +74,7 @@ public class RegistryObject extends Model {
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "_registryObject")
     public List<Relation> relations;  // "related by"
-    
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "_relatedRegistryObject")
     List<Relation> _relations;  // "related to"
 

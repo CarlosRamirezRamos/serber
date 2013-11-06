@@ -1,8 +1,8 @@
 tmp
 
+/.classpath
 /.settings
 /.project
-/.classpath
 
 dist
 project/project
@@ -11,4 +11,4 @@ target
 .history
 
 logs
-RUNNING_PID
+/RUNNING_PID
