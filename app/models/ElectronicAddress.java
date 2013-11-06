@@ -42,7 +42,7 @@ public class ElectronicAddress extends Model {
     @Basic
     @Column(name = "value", length = 512)
     public String value;
-    
+
     @Basic
     @Column(name = "type", length = 512)
     public String type;
