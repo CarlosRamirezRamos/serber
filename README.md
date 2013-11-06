@@ -20,11 +20,11 @@ To access an SQL database, Play provides a plugin for managing JDBC connection p
 
 The SERBER project is divided in two sub-projects, a web application *serving* web services ([serber-project/serber](http://github.com/serber-project/serber)) by offering them and a web application *interfacing* web services ([serber-project/serber-interface](http://github.com/serber-project/serber-interface)) by reading, searching, navigating and viewing data, i.e., a demo site that uses those web services.  Both repositories are needed.
 
-To compile and run these sub-projects, it is mandatory to install Play which can be downloaded from its web site ([http://www.playframework.com/download](http://www.playframework.com/download)).  Currently, SERBER uses Play version 2.2.0: [http://downloads.typesafe.com/play/2.2.0/play-2.2.0.zip](http://downloads.typesafe.com/play/2.2.0/play-2.2.0.zip).
+To compile and run these sub-projects, it is mandatory to install Play which can be downloaded from its web site ([http://www.playframework.com/download](http://www.playframework.com/download)).  Currently, SERBER uses Play version 2.2.1: [http://downloads.typesafe.com/play/2.2.1/play-2.2.1.zip](http://downloads.typesafe.com/play/2.2.1/play-2.2.1.zip).
 
 Prerequisites: JDK 6 or later.
 
-Installing Play Framework: [http://www.playframework.com/documentation/2.2.0/Installing](http://www.playframework.com/documentation/2.2.0/Installing)
+Installing Play Framework: [http://www.playframework.com/documentation/2.2.1/Installing](http://www.playframework.com/documentation/2.2.1/Installing)
 
 
 
