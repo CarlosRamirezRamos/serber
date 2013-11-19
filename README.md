@@ -1,24 +1,26 @@
 SERBER
 ======
 
-**SERBER** (SErvicio de Registro de Bibliotecas y Entidades Relacionadas, Registry Service of Libraries and Related Organizations) is a system that faithfully implements the abstract model of ISO 2146:2010, with its five entities, the main class registry object, and the subclasses Parties (persons and organizations), Activities, Collections, and Services.  This system aims to be a general-purpose tool.  It should not be limited to the library sector as it could be used to build a registry service for any other community.
+**SERBER** (SErvicio de Registro de Bibliotecas y Entidades Relacionadas, Registry Service for Libraries and Related Organizations) is a system that faithfully implements a data model based on the ISO 2146:2010 scheme considering its five entities: the main class Registry Object, and the classes Parties (persons and organizations), Activities, Collections, and Services.  This data model has proven successful and perfect for encapsulating registry data from different sources (origin) and, hence, of different kinds (nature).  It is essential to emphasize the fact that the system aims to be a general-purpose tool around the registry logic services, it should not be limited to the library sector as it could potentially be used to build a registry logic service for any other community.
 
-**SERBER** provides an API of RESTful web services (JSON and XML serializations) for querying, reading, adding and updating the registry data and sharing with third parties.
+**SERBER core** provides a registry logic by means of RESTful web services.  This registry logic allows for administrating, searching, creating, reading, updating and deleting registry data via web.  On the other hand, the RESTful web services allow the registry logic to occur optimally over the HTTP protocol.  An API of RESTful web services is provided for exchanges of information to take place with third parties (registry presentation).
 
-**SERBER** has been built with an open approach in mind, i.e., using an architecture focused on reuse and open source libraries, models and applications.
+**SERBER interface** provides a registry presentation by means of a responsive web interface.  This registry presentation allows for managing, searching, visualizing and debugging registry data via web.  On the other hand, the responsive web interface allows the registry presentation to occur optimally on any device (mobile, tablet, laptop or desktop).
+
+**SERBER** has been built with a free & open source software approach in mind.  We would like to encourage contribution and adoption by easing both the collaboration with other developers and the interchangeability of different components.
 
 
 
 Development Environment & Associated Technologies
 -------------------------------------------------
 
-The development environment selected for this project is Play Framework ([http://www.playframework.com](http://www.playframework.com)): A modern and advanced Java/Scala stack to build web applications.  Play provides the MVC architectural pattern, RESTful framework, JSON/XML parsers and marshallers, persistence layer based on JPA, JavaScript, LESS and many other modern and well accepted web technologies.
+The development environment selected for this project is Play Framework ([http://www.playframework.com](http://www.playframework.com)): A modern and scalable Java/Scala stack to build web applications.  Play provides the MVC architectural pattern, RESTful framework, XML/JSON parsers and marshallers, persistence layer based on JPA, JavaScript and many other modern and well accepted web technologies.
 
 The pattern selected for the controller is a VM (ViewModel).  This pattern strengthens the decoupling between the interface and the data let alone the development environment.  At the moment, SERBER implements such pattern by means of Knockout and AJAX.
 
 To access an SQL database, Play provides a plugin for managing JDBC connection pools as well as the Ebean ORM for mapping to the database.  These can be configured at `serber/` directory in `conf/application.conf` file.  At the moment, SERBER is configured to use H2 in memory database as its default RDBMS.
 
-The SERBER project is divided in two sub-projects, a web application *serving* web services ([serber-project/serber](http://github.com/serber-project/serber)) by offering them and a web application *interfacing* web services ([serber-project/serber-interface](http://github.com/serber-project/serber-interface)) by reading, searching, navigating and viewing data, i.e., a demo site that uses those web services.  Both repositories are needed.
+The SERBER project is divided in two sub-projects, a web-based application *serving* web services ([serber-project/serber](https://github.com/serber-project/serber)) by offering them in terms of administrating, searching, creating, reading, updating and deleting registry data and a web-based application *interfacing* web services ([serber-project/serber-interface](https://github.com/serber-project/serber-interface)) by demanding them in terms of managing, searching, visualizing and debugging registry data.  The former application composes the latter application.  The serber sub-project implements a *static* site offering registry logic web services, i.e., the core site.  The serber-interface sub-project is a *dynamic* site demanding registry logic web services, i.e., the interface site.  Both repositories are needed for a proof of concept demonstration to be shown.
 
 To compile and run these sub-projects, it is mandatory to install Play which can be downloaded from its web site ([http://www.playframework.com/download](http://www.playframework.com/download)).  Currently, SERBER uses Play version 2.1.1: [http://downloads.typesafe.com/play/2.1.1/play-2.1.1.zip](http://downloads.typesafe.com/play/2.1.1/play-2.1.1.zip).
 
@@ -47,11 +49,11 @@ Authors
 
 **Carlos Ramírez**
 
--   [http://github.com/CarlosRamirezRamos](http://github.com/CarlosRamirezRamos)
+-   [https://github.com/CarlosRamirezRamos](https://github.com/CarlosRamirezRamos)
 
 **Pablo Ripollés**
 
--   [http://github.com/protolab-org](http://github.com/protolab-org)
+-   [https://github.com/protolab-org](https://github.com/protolab-org)
 
 
 
@@ -60,7 +62,7 @@ Copyright and License
 
 Copyright 2013 Spanish Ministry of Education, Culture and Sport
 
-Licensed under the EUPL, Version 1.1 or – as soon they will be approved by the European Commission - subsequent versions of the EUPL (the "Licence");
+Licensed under the EUPL, Version 1.1 or - as soon they will be approved by the European Commission - subsequent versions of the EUPL (the "Licence");
 You may not use this work except in compliance with the License.
 You may obtain a copy of the License at:
 

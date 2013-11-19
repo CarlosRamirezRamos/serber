@@ -7,10 +7,11 @@ Contributions are welcome! for git workflows see the diagrams about *repositorie
 
 ### Task List ###
 
-- [ ] Implementation & documentation comments (Javadoc, Enunciate).
-- [ ] Unit testing (JUnit).
-- [ ] RESTful API improvements.
-- [ ] CRUD operations.
-- [ ] Negotiation and Cache API to adapt data model between Ebean ORM and controllers.
-- [ ] Twitter-Bootstrap theme to be used for the interface.
-- [ ] Externalizing messages and internationalization.
+- [ ] Implement Bootstrap based theme & template.
+- [ ] Implement Negotiators and Cache API.
+- [ ] Complete RESTful API.
+- [ ] Complete CRUD operations.
+- [ ] Improve front-end & back-end architecture.
+- [ ] Improve implementation & documentation comments (Javadoc, Enunciate).
+- [ ] Implement externalizing messages and internationalization.
+- [ ] Implement unit testing (JUnit).
