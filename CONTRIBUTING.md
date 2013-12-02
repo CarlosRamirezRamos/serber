@@ -7,11 +7,12 @@ Contributions are welcome! for git workflows see the diagrams about *repositorie
 
 ### Task List ###
 
-- [ ] Implement Bootstrap based theme & template.
-- [ ] Implement Negotiators and Cache API.
-- [ ] Complete RESTful API.
-- [ ] Complete CRUD operations.
-- [ ] Improve front-end & back-end architecture.
-- [ ] Improve implementation & documentation comments (Javadoc, Enunciate).
-- [ ] Implement externalizing messages and internationalization.
-- [ ] Implement unit testing (JUnit).
+- [ ] Data binding architecture (client).
+- [ ] Bootstrap based theme & template.
+- [ ] Data mapping architecture (server).
+- [ ] REST API.
+- [ ] CRUD operations.
+- [ ] Documentation comments (Javadoc, Enunciate).
+- [ ] Documentation pages (GitHub Pages).
+- [ ] Externalization of messages and i18n.
+- [ ] Unit testing (JUnit).
