@@ -17,6 +17,6 @@ import views.html.*;
 public class Application extends Controller {
 
     public static Result index() {
-        return ok(index.render("Welcome to SERBER|pilot"));
+        return ok(index.render("Welcome to SERBER|pilot - Home", "index"));
     }
 }
