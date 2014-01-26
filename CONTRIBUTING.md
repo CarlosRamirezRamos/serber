@@ -8,7 +8,7 @@ Contributions are welcome! for git workflows see the diagrams about *repositorie
 ### Task List ###
 
 - [ ] Data binding architecture (client).
-- [ ] Bootstrap based theme & template.
+- [x] Bootstrap based theme & template.
 - [ ] Data mapping architecture (server).
 - [ ] REST API.
 - [ ] CRUD operations.
