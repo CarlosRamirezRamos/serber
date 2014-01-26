@@ -7,7 +7,7 @@ Contributions are welcome! for git workflows see the diagrams about *repositorie
 
 ### Task List ###
 
-- [ ] Implement Bootstrap based theme & template.
+- [x] Implement Bootstrap based theme & template.
 - [ ] Implement Negotiators and Cache API.
 - [ ] Complete RESTful API.
 - [ ] Complete CRUD operations.
