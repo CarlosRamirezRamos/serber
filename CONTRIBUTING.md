@@ -7,12 +7,12 @@ Contributions are welcome! for git workflows see the diagrams about *repositorie
 
 ### Task List ###
 
-- [ ] Data binding architecture (client).
-- [ ] Bootstrap based theme & template.
-- [ ] Data mapping architecture (server).
+- [x] Bootstrap based theme & template.
+- [ ] Interaction tier architecture.
+- [ ] Database tier architecture.
+- [ ] Externalization of messages and i18n.
 - [ ] REST API.
 - [ ] CRUD operations.
 - [ ] Documentation comments (Javadoc, Enunciate).
 - [ ] Documentation pages (GitHub Pages).
-- [ ] Externalization of messages and i18n.
 - [ ] Unit testing (JUnit).

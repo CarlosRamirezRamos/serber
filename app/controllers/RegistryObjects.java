@@ -1,5 +1,5 @@
 /*
- * RegistryObjectApi.java
+ * RegistryObjects.java
  */
 
 
@@ -19,15 +19,9 @@ import models.*;
 
 
 /**
- * RegistryObjectApi
+ * RegistryObjects
  */
-public class RegistryObjectApi extends Controller {
-
-    public static Result list(String search, String page, String callback) {
-        List<RegistryObject> registryObjects = RegistryObject.list(search, page);
-        Jsonp jsonp = Jsonp.jsonp(callback, Json.toJson(registryObjects));
-        return ok(jsonp);
-    }
+public class RegistryObjects extends Controller {
 
     public static Result create(Long key) {
         return TODO;
@@ -39,11 +33,17 @@ public class RegistryObjectApi extends Controller {
         return ok(jsonp);
     }
 
-    public static Result update() {
+    public static Result update(Long key) {
         return TODO;
     }
 
     public static Result delete(Long key) {
         return TODO;
+    }
+
+    public static Result list(String search, String page, String callback) {
+        List<RegistryObject> registryObjects = RegistryObject.list(search, page);
+        Jsonp jsonp = Jsonp.jsonp(callback, Json.toJson(registryObjects));
+        return ok(jsonp);
     }
 }

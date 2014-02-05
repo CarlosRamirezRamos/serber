@@ -1,7 +1,7 @@
 Install SERBER
 --------------
 
-The SERBER project is divided in two sub-projects, a web-based application *serving* web services ([serber-project/serber](https://github.com/serber-project/serber)) by offering them in terms of administrating, searching, creating, reading, updating and deleting registry data and a web-based application *interfacing* web services ([serber-project/serber-interface](https://github.com/serber-project/serber-interface)) by demanding them in terms of managing, searching, visualizing and debugging registry data.  The former application composes the latter application.  The serber sub-project implements a *static* site offering registry logic web services, i.e., the core site.  The serber-interface sub-project is a *dynamic* site demanding registry logic web services, i.e., the interface site.  Both repositories are needed for a proof of concept demonstration to be shown.
+The SERBER project is divided in two sub-projects, a web-based application *serving* web services ([serber-project/serber](https://github.com/serber-project/serber)) by offering them in terms of administrating, searching, creating, reading, updating and deleting registry data and a web-based application *interfacing* web services ([serber-project/serber-interface](https://github.com/serber-project/serber-interface)) by demanding them in terms of managing, searching, visualizing and debugging registry data.  The former application composes the latter application.  The serber sub-project implements a *static* site offering registry application web services, i.e., the core site.  The serber-interface sub-project is a *dynamic* site demanding registry application web services, i.e., the interface site.  Both repositories are needed for a proof of concept demonstration to be shown.
 
 Once the repositories have been cloned to local, we need to accomplish the following steps:
 
@@ -36,14 +36,14 @@ Once the repositories have been cloned to local, we need to accomplish the follo
 	-   From the browser address bar, access the SERBER web-based services:
 
 			http://localhost:9000
-		+   A message stating `Database 'default' needs evolution!` will be display.  The appropriate SQL script will be generated at `serber/` directory in `/conf/evolutions/default/1.sql` file.
-		+   This SQL script needs to be executed on the database engine.
-		+   This SQL script can be executed by simply clicking `Apply this script now!` button.
+		+   A message stating `Database 'default' needs evolution!` will be display.  The appropriate SQL DDL script will be generated at `serber/` directory in `/conf/evolutions/default/1.sql` file.
+		+   This SQL DDL script needs to be executed on the database engine.
+		+   This SQL DDL script can be executed by simply clicking `Apply this script now!` button.
 		+   If H2 database engine and default JDBC data source `default` are used, the newly created database schema can be viewed on the *H2 Console*, though there will be no data yet, the database still needs to be populated.
 	-   A *static* web about the SERBER project is served.  The static page can be displayed, though there is no navigation, in this case, the SERBER web-based "application" is just *serving* registry logic web services.
 
 5.  Populating the SQL database [only if necessary]
-	-   To populate the database some data SQL script needs to be executed on the database engine.  A sample data SQL script is supplied at `serber/` directory in `conf/script.sql` file.
+	-   To populate the database some data SQL script needs to be executed on the database engine.  A sample data SQL script is supplied at `serber/` directory in `conf/sample.sql` file.
 	-   If H2 database engine and default JDBC data source `default` is used, the sample data SQL script can be executed on the *H2 Console*, now the data is ready.
 
 6.  Entering the Play console for **SERBER web-based interface**
