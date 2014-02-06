@@ -3,14 +3,14 @@
 # ~~~~
 
 # Home page
-GET     /                         controllers.Application.index()
+GET     /                         controllers.Application.index
 
 # RegistryObjects
 POST    /registry-object/:id      controllers.RegistryObjects.create(id: Long)
 GET     /registry-object/:id      controllers.RegistryObjects.read(id: Long, callback: String)
 PUT     /registry-object/:id      controllers.RegistryObjects.update(id: Long)
 DELETE  /registry-object/:id      controllers.RegistryObjects.delete(id: Long)
-GET     /registry-objects         controllers.RegistryObjects.list(search: String, page: String, callback: String)
+GET     /registry-objects         controllers.RegistryObjects.list(text: String, page: String, callback: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file             controllers.Assets.at(path="/public", file)
